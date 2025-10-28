@@ -24,7 +24,7 @@ jobs:
       - name: 📦 Install Testim CLI
         run: npm install -g @testim/testim-cli
       
-      # testim grid runs in headless by default
+      # Testim Grid runs in headless mode by default
       - name: 🧪 Run Testim tests
         env:
           TESTIM_TOKEN: ${{ secrets.TESTIM_TOKEN }}
@@ -40,5 +40,5 @@ jobs:
             --branch "master" \
             --label "EastSpring" \
             --test-config "FHD 1920x1080" \
-            --parallel 4 \ 
+            --parallel 4 \
             --report-file "testim-report.json"
