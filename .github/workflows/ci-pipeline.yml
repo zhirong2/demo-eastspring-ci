@@ -29,6 +29,8 @@ jobs:
           TESTIM_TOKEN: ${{ secrets.TESTIM_TOKEN }}
           TESTIM_PROJECT: ${{ secrets.TESTIM_PROJECT }}
         run: |
+          echo "Token length: ${#TESTIM_TOKEN}"
+          echo "Project length: ${#TESTIM_PROJECT}"
           testim \
             --token "$TESTIM_TOKEN" \
             --project "$TESTIM_PROJECT" \
