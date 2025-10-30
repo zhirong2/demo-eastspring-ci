@@ -40,5 +40,5 @@ jobs:
             --branch "master" \
             --label "EastSpring" \
             --test-config "FHD 1920x1080" \
-            --parallel 4 \
+            --parallel 3 \
             --report-file "testim-report.json"
