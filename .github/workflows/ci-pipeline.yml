@@ -38,7 +38,7 @@ jobs:
             --grid "Testim-Grid" \
             --mode "selenium" \
             --branch "master" \
-            --label "EastSpring" \
+            --label "random-stuff" \
             --test-config "FHD 1920x1080" \
             --parallel 3 \
             --report-file "testim-report.json"
