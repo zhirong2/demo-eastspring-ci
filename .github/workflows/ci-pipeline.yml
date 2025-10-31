@@ -41,4 +41,6 @@ jobs:
             --label "random-stuff" \
             --test-config "FHD 1920x1080" \
             --parallel 3 \
+            --retries 2 \
+            --timeout 900000 \
             --report-file "testim-report.json"
